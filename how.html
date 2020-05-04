@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+  <meta charset="utf-8">
+  <title>Learn Up</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link href="https://fonts.googleapis.com/css?family=Short+Stack&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.typekit.net/ajl6tgu.css">
+  <link rel="stylesheet" href="css/minisite.css">
+
+
+
+</head>
+
+<body>
+  <div class="top-bar">
+    <a href="index.html"> <img class="logo" src="img/logo-learn-up.png" alt="logo"> </a>
+    <h1> LearnUp </h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="how.html">How it Works?</a></li>
+        <li><a href="about.html">About </a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div>
+    <div class="section-two" id="how">
+
+      <h1> let them be the hero of their own story</h1>
+
+      <div class="slideshow">
+        <img class="mySlides" src="img/Sarah-book-cover.png" alt="img2">
+        <img class="mySlides" src="img/BOOKCOVER2.png" alt="img3">
+        <img class="mySlides" src="img/bookcover.png" alt="img4">
+        <img class="mySlides" src="img/transform.png" alt="img1">
+      </div>
+      <div class="buttom">
+        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+      </div>
+
+      <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          if (n > x.length) {
+            slideIndex = 1
+          }
+          if (n < 1) {
+            slideIndex = x.length
+          }
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+          }
+          x[slideIndex - 1].style.display = "block";
+        }
+      </script>
+    </div>
+  </div>
+  <br>
+  <br>
+  <!--
+ -->
+  <div class="grid-container">
+
+    <div class="girls-text"><img src="img/1.png" alt="1">
+      <h3>Upload a picture of your kid as a refrence </h3>
+    </div>
+    <div class="girls"><img src="img/girl.png" alt="girl"></div>
+
+
+    <div class="characters"> <img src="img/characterrr.png" alt="character"> </div>
+    <div class="characters-text"> <img src="img/2.png" alt="2">
+      <h3>Enter their name and personalize the character, and make them look just like your kid.</h3></div>
+
+
+    <div class="books-text"> <img src="img/3.png" alt="3">
+      <h3>hooray! you’ve created a personalized storybook for your kid to learn and enjoy.</h3>
+    </div>
+    <div class="books"><img class="book" src="img/sarah-book.png" alt="book-cover"></div>
+
+
+    <!-- <div class="yay">
+      <img src="https://media.giphy.com/media/120ErahsQyf1q8/giphy.gif" alt="yay">
+    </div> -->
+
+
+
+
+
+  </div>
+  <br>
+
+
+
+
+</body>
+
+</html>
